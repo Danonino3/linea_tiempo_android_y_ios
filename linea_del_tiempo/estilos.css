@@ -1,0 +1,437 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Fondo menos transparente */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("fondo.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+@keyframes flotarEstrellas {
+    from { transform: translateY(0); }
+    to { transform: translateY(-300px); }
+}
+
+/* Título elegante flotando */
+.titulo {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    color: black;
+    margin: 60px 0;
+    animation: flotar 4s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Línea central con brillo */
+.timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,1),
+        rgba(0,0,0,0.3));
+    animation: brilloLinea 3s infinite alternate;
+}
+
+@keyframes brilloLinea {
+    from { filter: brightness(1); }
+    to { filter: brightness(1.6); }
+}
+
+/* Items */
+.item {
+    position: relative;
+    width: 50%;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.item:nth-child(odd) { left: 0; text-align: right; }
+.item:nth-child(even) { left: 50%; }
+
+/* COLORES EN ORDEN */
+.rojo .marco { background: red; }
+.naranja .marco { background: orange; }
+.amarillo .marco { background: gold; }
+.verde .marco { background: green; }
+.azul .marco { background: blue; }
+.morado .marco { background: purple; }
+.rosa .marco { background: hotpink; }
+.marron .marco { background: brown; }
+.negro .marco { background: black; }
+
+.marco {
+    padding: 20px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+/* Inclinación alternada del marco */
+.item:nth-child(odd) .marco {
+    transform: rotate(-2deg);
+}
+
+.item:nth-child(even) .marco {
+    transform: rotate(2deg);
+}
+
+.marco:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 0 30px rgba(255,255,255,0.7);
+}
+
+.marco:hover .polaroid {
+    transform: rotate(0deg);
+}
+
+
+/* Polaroid interior */
+.polaroid {
+    background: white;
+    padding: 15px 15px 45px 15px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Inclinación alternada más marcada */
+.item:nth-child(odd) .polaroid {
+    transform: rotate(-5deg);
+}
+
+.item:nth-child(even) .polaroid {
+    transform: rotate(5deg);
+}
+
+.polaroid:hover {
+    transform: scale(1.07) rotate(0deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Imagen */
+.polaroid img {
+    max-width: 240px;
+    border-radius: 10px;
+}
+
+/* Cinta decorativa */
+.polaroid::before {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 28px;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-10deg);
+    border-radius: 4px;
+    opacity: 0.85;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Cinta del mismo color */
+.rojo .polaroid::before { background: red; }
+.naranja .polaroid::before { background: orange; }
+.amarillo .polaroid::before { background: gold; }
+.verde .polaroid::before { background: green; }
+.azul .polaroid::before { background: blue; }
+.morado .polaroid::before { background: purple; }
+.rosa .polaroid::before { background: hotpink; }
+.marron .polaroid::before { background: brown; }
+.negro .polaroid::before { background: black; }
+
+/* Estrella */
+.estrella {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+}
+
+/* Año en círculo */
+.year {
+    margin: 15px auto 0 auto;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+/* Color del círculo */
+.rojo .year { background: red; }
+.naranja .year { background: orange; }
+.amarillo .year { background: gold; color: black; }
+.verde .year { background: green; }
+.azul .year { background: blue; }
+.morado .year { background: purple; }
+.rosa .year { background: hotpink; }
+.marron .year { background: brown; }
+.negro .year { background: black; }
+
+/* Tooltip elegante */
+.tooltip {
+    width: 480px;
+    max-width: 90%;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    position: absolute;
+
+    left: 120%;   /* 👈 lo manda hacia la derecha */
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    opacity: 0;
+    transition: all 0.4s ease;
+
+    font-family: 'Segoe UI', 'Poppins', sans-serif;
+    line-height: 1.6;
+    z-index: 10;
+}
+
+.item:nth-child(odd) .tooltip {
+    right: -380px;
+    transform: translateY(-50%);
+}
+
+.item:nth-child(even) .tooltip {
+    left: -380px;
+    transform: translateY(-50%);
+}
+
+.polaroid.active + .tooltip {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+}
+
+.tooltip h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--color-principal);
+    font-weight: 700;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 8px;
+}
+
+.tooltip p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Lista mejor formada */
+.tooltip ul {
+    padding-left: 18px;
+    margin-top: 8px;
+}
+
+.tooltip li {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    left: -12px;   /* 👈 sale del lado izquierdo */
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #ffffff;
+}
+
+.item.active .tooltip {
+    opacity: 1;
+}
+
+/* flechas */
+
+.scroll-buttons {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.scroll-btn {
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.scroll-btn:hover {
+    background: #444;
+    transform: scale(1.1);
+}
+
+/* barra año */
+
+.year-indicator {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 220px;
+    background: black;
+    border-radius: 40px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.year-indicator:hover {
+    transform: translateY(-50%) scale(1.05);
+}
+
+/* Colores dinámicos para barra izquierda */
+.year-indicator.rojo { background: red; }
+.year-indicator.naranja { background: orange; }
+.year-indicator.amarillo { background: gold; color: black; }
+.year-indicator.verde { background: green; }
+.year-indicator.azul { background: blue; }
+.year-indicator.morado { background: purple; }
+.year-indicator.rosa { background: hotpink; }
+.year-indicator.marron { background: brown; }
+.year-indicator.negro { background: black; }
+
+/* Transición suave */
+.year-indicator {
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+
+/* BOTÓN SUPERIOR */
+.switch-btn {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    padding: 12px 25px;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+    z-index: 2000;
+}
+
+.switch-btn:hover {
+    transform: scale(1.05);
+    background: #f0f0f0;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Color extra para iOS */
+.gris .marco { background: gray; }
+.gris .year { background: gray; }
+
+.item.right .tooltip {
+    left: auto;
+    right: 120%;   /* 👈 ahora sale hacia la izquierda */
+}
+
+/* Flecha cambia de lado */
+.item.right .tooltip::after {
+    left: auto;
+    right: -14px;
+    border-right: none;
+    border-left: 14px solid #fff;
+}
+.item.rojo {
+    --color-principal: red;
+}
+.item.naranja {
+    --color-principal: orange;
+}
+
+.item.amarillo {
+    --color-principal: rgb(217, 217, 50);
+}
+
+.item.verde {
+    --color-principal: green;
+}
+
+.item.azul {
+    --color-principal: blue;
+}
+
+.item.morado {
+    --color-principal: purple;
+}
+
+.item.rosa {
+    --color-principal: rgb(211, 93, 146);
+}
+
+.item.marron {
+    --color-principal: brown;
+}
+.item.negro {
+    --color-principal: black;
+}
+
+

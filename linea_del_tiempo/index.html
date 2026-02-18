@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Línea del tiempo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- BOTÓN CAMBIO -->
+<button class="switch-btn" onclick="mostrarIOS()">
+    Línea del tiempo iOS
+</button>
+
+<h1 class="titulo" id="mainTitle">Línea del tiempo de Android</h1>
+
+<!-- ================= ANDROID ================= -->
+<div class="timeline" id="androidTimeline">
+
+    <!-- eclair -->
+
+    <div class="item rojo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto1.png">
+                <div class="year">2009</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Eclair (oct. 2009) Nivel de API 5</center></h1>
+            <p><center>También conocido como <b>Android 2.0</b> y <b>Android 2.1</b> fue la quinta versión descontinuada del 
+                sistema operativo móvil de código abierto Android desarrollado por Google. 
+                Mejora de la velocidad de escritura en el teclado virtual mediante el uso de datos multitouch</center></p>
+            <p><b><center>Características:</center></b></p>
+<ul><center>
+    <li>En esta versión las cosas cambiaron y no se limita a ser una simple actualización.</li>
+    <li>La velocidad de hardware se optimiza.</li>
+    <li>Soporta pantallas de mayor tamaño y resolución.</li>
+    <li>Cambia la interfaz de usuario.</li>
+    <li>El navegador soporta HTML5.</li>
+    <li>Soporta Microsoft Exchange.</li>
+    <li>Soporte integrado de flash para la cámara.</li>
+    <li>MotionEvent mejorado para eventos multi-touch.</li>
+</ul></center>
+
+
+        </div>
+    </div>
+
+    <!-- froyo -->
+
+    <div class="item naranja right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto2.png">
+                <div class="year">2010</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Froyo (mayo 2010) Nivel de API 8</center></h1>
+            <p><center>Android 2.2 Froyo (2010) introdujo mejoras significativas en velocidad y rendimiento, destacando por la compilación 
+                JIT, motor JavaScript V8, soporte para Flash 10.1, instalación de apps en la memoria externa (SD), 
+                punto de acceso Wi-Fi/anclaje USB y el servicio C2DM. La estructura se basa en las capas estándar de Android 
+                (Kernel Linux, Bibliotecas, Android Runtime, Framework, Aplicaciones). </center></p>
+        </div>
+    </div>
+
+    <!-- gingerbread -->
+
+    <div class="item amarillo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto3.png">
+                <div class="year">2010</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Gingerbread (dic 2010) Nivel de API 9</center></h1>
+            <p><center>Android 2.3 Gingerbread, lanzado por Google en 2010, fue una versión fundamental que mejoró la velocidad, interfaz y gestión energética de la plataforma.</center></p>
+                <p><b><center>Nuevas funciones para el usuario</center></b></p>
+                <ul><center>
+                    <li>Mejoras en la IU para ofrecer simplicidad y velocidad.</li>
+                    <li>Entrada de texto más intuitiva y rápida.</li>
+                    <li>Selección de palabras y copiado y pegado con un solo toque.</li>
+                    <li>Administración de energía mejorada.</li>
+                    <li>Control sobre las aplicaciones</li>
+                    <li>Nuevas formas de comunicarse y organizar</li>
+                    <li>Llamadas por internet.</li>
+                </ul></center>
+                <p><center>La interfaz de usuario de Gingerbread se perfeccionó de muchas maneras, haciéndola más fácil de dominar, más rápida de usar y más eficiente en el consumo de energía.</center></p>
+        </div>
+    </div>
+
+    <!-- honeycomb -->
+
+    <div class="item verde right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto4.png">
+                <div class="year">2011</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Honeycomb (feb. 2011) Nivel de API 11</center></h1>
+            <p><center>Android 3.0 Honeycomb, lanzado en febrero de 2011 con la Motorola Xoom, fue la octava versión principal de Android y 
+                la primera diseñada específicamente para tabletas. Introdujo una interfaz "holográfica" de color azul, botones virtuales 
+                en pantalla (inicio, atrás, aplicaciones recientes) y widgets redimensionables, marcando una evolución significativa en el 
+                diseño de la interfaz de usuario. </center></p>
+                <p><b><center>Características:</center></b></p>
+                <ul><center>
+                    <li>Interfaz de Usuario.</li>
+                    <li>Multitarea y Navegación.</li>
+                    <li>Widgets y Pantalla de Inicio.</li>
+                    <li>Navegador Web.</li>
+                    <li>Aplicaciones Optimizadas.</li>
+                    <li>Rendimiento y Hardware.</li>
+                    <li>Actualizaciones (MR1/3.1 y 3.2).</li>
+                </center></ul>
+        </div>
+    </div>
+
+    <!-- Ice cream -->
+
+    <div class="item azul">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto5.png">
+                <div class="year">2011</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Ice Cream Sándwich (oct. 2011) Nivel de API 14</center></h1>
+            <p><center>Android 4.0 Ice Cream Sandwich (ICS), lanzado por Google en octubre de 2011, fue una versión clave que 
+                unificó las plataformas de teléfonos y tablets, introduciendo una interfaz moderna (Holo) con botones suaves, widgets 
+                redimensionables y multitarea mejorada.</center></p>
+            <p><center><b>Características:</b></center></p>
+            <ul><center>
+                <li>Interfaz de Usuario (Holo).</li>
+                <li>Gestión de Widgets y Aplicaciones.</li>
+                <li>Navegador Web.</li>
+                <li>Desbloqueo Facial (Face Unlock).</li>
+                <li>Multimedia y Cámara.</li>
+                <li>Funcionalidades Técnicas.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- Jelly bean -->
+
+    <div class="item morado right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto6.png">
+                <div class="year">2012</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Jelly Bean (julio 2012) Nivel de API 16</center></h1>
+            <p><center>El operativo de Android 4.1 se ha caracterizó por ser  rápido, completo y 
+                agradable como las gomitas de gelatina. De allí viene su nombre en inglés Jelly Bean, 
+                que quiere decir gomita. Tiene características significativas que facilitarán su uso.</center></p>
+            <p><b><center>Características:</center></b></p>
+            <ul><center>
+                <li>Los gráficos han aumentado.</li>
+                <li>La búsqueda de por Google Ahora, o Google Now como se lo conoce en inglés, es más interactiva.</li>
+                <li>Google Now trae incorporado un sistema de reconocimiento de voz completo.</li>
+                <li>Respuestas más completas.</li>
+                <li>Intenta adelantar esa palabra que se está por escribir.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- kitkat -->
+
+    <div class="item rosa">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto7.png">
+                <div class="year">2013</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android KitKat (oct. 2013) Nivel de API 19</center></h1>
+            <p><center>Android 4.4 KitKat, lanzado en octubre de 2013, fue una versión fundamental de Android 
+                enfocada en la optimización del rendimiento para dispositivos de gama baja con apenas 512 MB de RAM</center></p>
+            <p><center><b>Características:</b></center></p>
+            <ul><center>
+                <li>Funciona en dispositivos con pocos recursos.</li>
+                <li>Apariencia más pulida, con barras de estado y navegación translúcidas, y una barra de aplicaciones más clara.</li>
+                <li>Oculta las barras de estado jugos, lectura o pantalla completa.</li>
+                <li>Mejora de voz del asistente de Google Now</li>
+                <li> Introdujo la emulación de tarjeta de host (HCE) para NFC.</li>
+                <li>El diseño general se hizo más claro.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- lollipop -->
+
+    <div class="item marron right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto8.png">
+                <div class="year">2014</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Lollipop (nov. 2014) Nivel de API 21</center></h1>
+            <p><center>Los cambios más prominentes en Lollipop incluyen una interfaz de usuario rediseñada 
+                construida sobre un diseño de lenguaje responsivo denominado como "Material design", así como mejoras 
+                en el sistema de notificaciones que permiten que este sea accedido desde la pantalla de bloqueo, y 
+                mostrado junto con otras aplicaciones como banners en la parte superior de la pantalla. También se 
+                hicieron cambios internos, al usar ART como el tiempo de ejecución por defecto, y cambios cuyo objetivo 
+                es mejorar y optimizar el consumo de batería que va de la mano con el Project Volta, el cual busca dar 
+                un mejor rendimiento a la batería y aumentar su uso en hasta un 90%.</center></p>
+        </div>
+    </div>
+
+    <!-- marshmallow -->
+
+    <div class="item negro">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto9.png">
+                <div class="year">2015</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Marshmallow (mayo 2015) Nivel de API 23</center></h1>
+            <p><center>Aunque estéticamente no conllevará muchos cambios, sí que lo hará a nivel técnico ya que 
+                cuenta con hasta 50 nuevas funciones. </center></p>
+                <p><center>La primera de ellas es que podrás acceder a Google Now desde la pantalla de bloqueo.</center></p>
+                <p><center>Puedes desinstalar aplicaciones de forma definitiva desde la pantalla de inicio 
+                    sin necesidad de dirigirte al menú. Además se ordenarán de manera alfabética las aplicaciones.</center></p>
+        </div>
+    </div>
+
+    <!-- nougat -->
+
+    <div class="item rojo right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto10.png">
+                <div class="year">2016</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Nougat (agosto 2016)Nivel de API 24</center></h1>
+            <p><center>Android 7.0 ofrece nuevas funciones para lograr rendimiento, productividad y seguridad. 
+                Prueba tus apps con los nuevos comportamientos del sistema para ahorrar energía y memoria. 
+                Aprovecha la IU multiventana, las notificaciones de respuesta directa y mucho más.</center></p>
+                <p><center>Además de nuevas funciones y capacidades, Android 7.0 incorpora varios cambios en el comportamiento del sistema y de la API.</center></p>
+                <ul><center>
+                    <li>Mejora la duración de batería y reducir el uso de RAM.</li>
+                    <li>Prolonga la duración de la batería aplazando actividades de CPU y red.</li>
+                    <li>Hay optimizaciones en segundo plano.</li>
+                    <li>Para mejorar la seguridad de los archivos privados, el directorio privado de las apps orientadas a Android 7.0 o versiones posteriores tiene acceso restringido.</li>
+                    <li>Permite a los usuarios configurar el Tamaño de visualización.</li>
+                </center></ul>
+        </div>
+    </div>
+
+    <!-- oreo -->
+
+    <div class="item naranja">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto11.png">
+                <div class="year">2017</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Oreo (agosto 2017) Nivel de API 26</center></h1>
+            <p><center>Android Oreo es la versión 8.0 del sistema operativo móvil de Google, lanzada oficialmente el 
+                21 de agosto de 2017. Esta actualización introdujo mejoras clave en rendimiento, eficiencia energética 
+                y experiencia de usuario. </center></p>
+            <ul><center>
+                <li>Permite ver vídeos en una ventana flotante mientras se usa otra aplicación.</li>
+                <li>Ofrece un control más fino sobre las notificaciones.</li>
+                <li>Limita el uso de aplicaciones en segundo plano para mejorar la autonomía.</li>
+                <li>Diseño unificado con dos capas (icono y fondo) que se adaptan al estilo del lanzador.</li>
+                <li>Cambio de diseño de "gota" a una estética más realista y plana, más similar a iOS.</li>
+                <li>Arquitectura que acelera las actualizaciones al separar el sistema operativo de los drivers del fabricante.</li>
+                <li>Sistema nativo para rellenar automáticamente datos como usuario y contraseña.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- pie -->
+
+    <div class="item amarillo right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto12.png">
+                <div class="year">2018</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android Pie (agosto 2018) Nivel de API 28</center></h1>
+            <p><center>impulsa el desarrollo y la integración de la inteligencia artificial para hacerte más fácil 
+                usar tu teléfono, cuida el estado de la batería y hasta te dará un reporte del tiempo que pasas usando 
+                el dispositivo.</center></p>
+            <ul><center>
+                <li>La batería de tu celular podrá identificar patrones de uso para priorizar la energía sólo en las aplicaciones y servicios que te interesan.</li>
+                <li>App Actions, que le permitirá a tu teléfono predecir lo que estás a punto de hacer para mostrarte varias opciones disponibles.</li>
+                <li>Android Pie facilita la selección inteligente de texto que reconoce el significado del texto que está escribiendo y sugiere acciones relevantes.</li>
+                <li>App Timer podrás establecer límites de tiempo que te avisarán cuando estés por cumplirlo y al llegar el momento, te sacará de la aplicación.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- android 10 -->
+
+    <div class="item verde">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto13.png">
+                <div class="year">2019</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 10 (sept. 2019) Nivel de API 29</center></h1>
+            <p><center>Android 10, lanzado en septiembre de 2019, introdujo mejoras clave como el modo oscuro en todo el sistema, navegación por 
+                gestos renovada y controles de privacidad avanzados (permisos de ubicación más estrictos). </center></p>
+            <p><center><b>Características:</b></center></p>
+            <ul><center>
+                <li><b>Privacidad y Seguridad: </b>Mayor control sobre el acceso a la ubicación y datos personales (permisos de aplicaciones).</li>
+                <li><b>Intefaz de usuario: </b>Introducción del tema oscuro del sistema y la navegación por gestos totalmente renovada, reemplazando los botones tradicionales.</li>
+                <li><b>Funciones Nuevas: </b>Incorporación de Live Caption (subtítulos automáticos), Focus Mode (modo concentración) y Bubbles (burbujas de notificaciones).</li>
+                <li><b>Rendimiento: </b>Mejoras en la velocidad de apertura de aplicaciones y la gestión de batería (optimización de ART).</li>
+                <li><b>Conectividad: </b>Soporte nativo para 5G y el estándar Wi-Fi 6. </li>
+            </center></ul>
+            <p><center>Fue el primer sistema operativo Android en abandonar los nombres de postres, marcando un cambio en la estrategia de la marca.</center></p>
+        </div>
+    </div>
+
+    <!-- android 11 -->
+
+    <div class="item azul right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto14.png">
+                <div class="year">2020</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 11 (sept. 2020) Nivel de API 30</center></h1>
+            <p><center>Se trata de una versión estable que finalmente llega después de haber pulido características en cuatro versiones 
+                developer preview y tres versiones beta. Está enfocada en la gestión de conversaciones, privacidad mejorada y controles de 
+                dispositivos inteligentes.</center></p>
+            <ul><center>
+                <li>Gestión de Conversaciones: Las notificaciones de mensajería se agrupan en un espacio dedicado, permitiendo priorizar conversaciones y usar burbujas flotantes para chats.</li>
+                <li>Privacidad y Seguridad: Implementa "permisos de un solo uso" para micrófono, cámara y ubicación, además del restablecimiento automático de permisos si no se usa una aplicación.</li>
+                <li>Controles de Dispositivos: Menú de apagado rediseñado para controlar dispositivos domésticos inteligentes (IoT) y mejor gestión de contenido multimedia.</li>
+                <li>Grabación de Pantalla: Herramienta nativa que permite grabar audio del sistema, micrófono o ambos.</li>
+                <li>Funciones Adicionales: Compatibilidad nativa con 5G, mejoras en el soporte para pantallas plegables, acceso rápido a billetera y mayor soporte para Android Auto inalámbrico. </li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- android 12 -->
+
+    <div class="item morado">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto15.png">
+                <div class="year">2021</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 12 (oct. 2021) Nivel de API 31</center></h1>
+            <p><center>Introdujo el lenguaje de diseño "Material You", permitiendo personalizar colores del sistema basados en el fondo de pantalla.
+                 Destaca por mejorar la privacidad con un panel de control dedicado y accesos directos al micrófono/cámara. Incorporó mejoras en 
+                 rendimiento, widgets y soporte para dispositivos plegables. </center></p>
+            <p><center><b>Características:</b></center></p>
+            <ul><center>
+                <li><b>Material You: </b>Interfaz dinámica que adapta los colores del sistema (notificaciones, ajustes, widgets) a la paleta del fondo de pantalla elegido.</li>
+                <li><b>Privacidad Reforzada: </b>Incluye un "Panel de privacidad" para ver qué apps acceden a cámara, micrófono o ubicación, además de indicadores de uso en la barra de estado.</li>
+                <li><b>Nuevo Panel de Ajustes Rápidos: </b>Más grande, con accesos directos para apagar la cámara/micrófono y controles multimedia integrados.</li>
+                <li><b>Rendimiento: </b>Mayor rapidez y eficiencia, con un uso reducido de los núcleos de alto rendimiento del sistema.</li>
+                <li><b>Funciones Nuevas: </b>Modo a una mano, capturas de pantalla con desplazamiento, uso compartido de WiFi mediante código QR o Nearby, y atenuación extra del brillo.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- android 13 -->
+
+    <div class="item rosa right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto16.png">
+                <div class="year">2022</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 13 (agosto 2022) Nivel de API 33</center></h1>
+            <p><center>Introduce íconos temáticos, permisos específicos de archivos, selección de idioma por aplicación y un
+reproductor multimedia renovado. Es una versión centrada en la evolución del diseño y funciones de usuario.</center></p>
+            <p><b><center>Características:</center></b></p>
+            <ul><center>
+                <li><b>Material You Mejorado: Mayor personalización de la interfaz, permitiendo que los iconos de aplicaciones coincidan con el color del fondo de pantalla.</b></li>
+                <li><b>Seguridad y Privacidad: </b>Nuevos permisos para el acceso a archivos, fotos y videos.</li>
+                <li><b>Idiomas por Aplicación: </b>Los usuarios pueden configurar un idioma diferente para cada aplicación.</li>
+                <li><b>Optimización en Tablets y Plegables: </b>Nueva barra de tareas para facilitar la multitarea y pantalla dividida.</li>
+                <li><b>Audio Espacial y Bluetooth LE: </b>Soporte para audio espacial y el estándar de audio Bluetooth Low Energy (LE) para menor latencia y mejor calidad.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- android 14 -->
+
+    <div class="item marron">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto17.png">
+                <div class="year">2023</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 14 (oct. 2023) Nivel de API 34</center></h1>
+            <p><center>Android 14 se centra en mejorar la personalización, seguridad y accesibilidad, destacando por el uso de IA para
+fondos de pantalla, gráficos Ultra HDR y una gestión de batería más eficiente. Incluye mejoras en accesibilidad
+como zoom avanzado, opciones de seguridad con PIN mejorado y mayor control sobre permisos de aplicaciones y datos.</center></p>
+            <ul><center>
+                <li><b>Seguridad y Privacidad: </b>PIN de 6 dígitos recomendado por defecto, protección avanzada de memoria.</li>
+                <li><b>Multimedia y Rendimiento: </b>Soporte para imágenes Ultra HDR, mejor calidad de audio USB sin pérdidas y optimizaciones en la gestión de la batería.</li>
+            </center></ul>
+        </div>
+    </div>
+
+    <!-- android 15 -->
+
+    <div class="item negro right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto18.png">
+                <div class="year">2024</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 15 (oct. 2024) Nivel de API 35</center></h1>
+            <p><center>Android 15 (nombre en clave "Vanilla Ice Cream") es la decimoquinta versión estable lanzada por Google en
+octubre de 2024, enfocada en mejorar la seguridad, el rendimiento y la experiencia en pantallas grandes. Las
+novedades clave incluyen un "Espacio Privado" para apps ocultas, mejor gestión de notificaciones contra
+fraudes OTP, soporte nativo para compartir pantalla parcial y mejoras en la cámara.</center></p>
+            <p><center>Algunas de sus novedades son la mejora en seguridad y privacidad donde incorpora el "Espacio privado" para
+proteger aplicaciones sensibles; la productividad y tablets donde hay mejoras significativas en el modo
+escritorio, permitiendo ventanas flotantes y una barra de tareas fija para facilitar la multitarea; y la cámara y
+multimediadonde hay soporte para mayores controles de hardware en aplicaciones de terceros y mejoras en el audio espacial.</center></p>
+        </div>
+    </div>
+
+    <!-- android 16 -->
+
+    <div class="item rojo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="foto19.png">
+                <div class="year">2025</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>Android 16 (jun. 2025) Nivel de API 36</center></h1>
+            <p><center>Android 16, cuyo lanzamiento oficial está previsto para el segundo trimestre de 2025, promete un rediseño
+significativo de la interfaz bajo "Material 3 Expressive", enfocado en mayor personalización, seguridad
+mejorada y funciones de IA, llegando primero a los dispositivos Pixel. Incluye notificaciones optimizadas, soporte para imágenes UltraHDR y mejoras en multitarea para tablets.</center></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= IOS ================= -->
+<div class="timeline oculto" id="iosTimeline">
+
+    <!-- ios 15 -->
+
+    <div class="item rojo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios5.png">
+                <div class="year">2021</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>IOS 15</center></h1>
+            <p><center>iOS 15, lanzado por Apple en septiembre de 2021, es un sistema operativo móvil que
+introdujo mejoras significativas en FaceTime (audio espacial, modo Retrato), introdujo el
+modo Enfoque para reducir distracciones, rediseñó las notificaciones, incorporó Texto en Vivo
+en fotos y rediseñó Mapas. Es la última versión compatible con el iPhone 6s, 7 y SE (1a gen).</center></p>
+            <p><b><center>Características:</center></b></p>
+            <ul><center>
+                <li><b>FaceTime: </b>Audio espacial y modo Retrato para difuminar el fondo.</li>
+                <li><b>Modos de Concentración: </b>Personalización de notificaciones según actividad (trabajo, sueño, ejercicio).</li>
+                <li><b>Texto en Vivo: </b>Reconocimiento de texto en fotos y en la web usando inteligencia en el dispositivo.</li>
+                <li><b>Mapas: </b>Experiencia 3D más detallada y realidad aumentada para rutas a pie.</li>
+                <li><b>Compartido contigo: </b>Secciones en apps (Fotos, Safari, Apple Music) que muestran contenido recibido en Mensajes</li>
+            </center></ul>
+            <p><center>iOS 15 es compatible desde el iPhone 6s hasta el iPhone 13. Aunque su sucesor es iOS 16,
+Apple ha continuado lanzando actualizaciones de seguridad ocasionales para este sistema.</center></p>
+        </div>
+    </div>
+
+    <!-- ios 16 -->
+
+    <div class="item naranja right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios4.png">
+                <div class="year">2022</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>IOS 16</center></h1>
+            <p><center>iOS 16, lanzado por Apple en septiembre de 2022, es un sistema operativo centrado en la
+personalización, destacando por su pantalla de bloqueo renovada con widgets y el buscador
+visual. Compatible desde el iPhone 8 en adelante, introdujo la edición de mensajes, mejoras
+en los modos de concentración y mayor seguridad antes de ser reemplazado por iOS 17.</center></p>
+            <p><center>iOS 16 es compatible con el iPhone 8, iPhone X y modelos posteriores, marcando el fin del soporte para el iPhone 6s, iPhone 7 y el iPod Touch de 7.a generación.</center></p>
+        </div>
+    </div>
+
+    <!-- ios 17 -->
+
+    <div class="item amarillo">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios3.png">
+                <div class="year">2023</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>IOS 17</center></h1>
+            <p><center>iOS 17, lanzado el 18 de septiembre de 2023, es el sistema operativo de Apple que introdujo
+mejoras significativas en comunicación y personalización, incluyendo el modo En Espera,
+pósters de contacto y NameDrop. Compatible con iPhone XS y modelos posteriores, optimiza la experiencia diaria con widgets interactivos y mejoras en el teclado.</center></p>
+            <p><center>iOS 17 es compatible con iPhone XS, XS Max, XR, SE (2a gen o posterior), y las series 11, 12, 13, 14
+y 15. Eliminó el soporte para el iPhone 8, 8 Plus y iPhone X.</center></p>
+        </div>
+    </div>
+
+    <!-- ios 18 -->
+
+    <div class="item verde right">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios2.png">
+                <div class="year">2024</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>IOS 18</center></h1>
+            <p><center>iOS 18, lanzado en septiembre de 2024, es una actualización mayor que personaliza el iPhone
+con una pantalla de inicio flexible, centro de control rediseñado y la integración de Apple
+Intelligence. Incluye un rediseño en Fotos, mejoras en Mensajes (incluyendo soporte RCS) y
+nuevas funciones de seguridad como el bloqueo de apps, junto con una app dedicada a contraseñas.</center></p>
+           <p><center>iOS 18 es compatible con el iPhone XR/XS en adelante, incluyendo las series iPhone 11, 12, 13, 14, 15 y 16.</center></p>
+        </div>
+    </div>
+
+    <!-- ios 26 -->
+
+    <div class="item azul">
+        <div class="marco">
+            <div class="polaroid" onclick="toggle(this)">
+                <span class="estrella">⭐</span>
+                <img src="ios1.png">
+                <div class="year">2025</div>
+            </div>
+        </div>
+        <div class="tooltip">
+            <h1><center>IOS 26</center></h1>
+            <p><center>Esta actualización es el mayor cambio visual desde iOS 7, centrada en un nuevo lenguaje de diseño llamado "Liquid Glass" (Cristal Líquido).</center></p>
+            <p><center><b>Características:</b></center></p>
+            <ul><center>
+                <li><b>Interfaz Liquid Glass: </b>Los iconos, widgets y menús ahora tienen un aspecto translúcido y con profundidad.</li>
+                <li><b>Traducción en Vivo: </b>Ahora el iPhone puede traducir llamadas telefónicas y de FaceTime en tiempo real, permitiendo que dos personas hablen en idiomas distintos y escuchen la traducciónal instante.</li>
+                <li><b>Gestión de Batería con IA: </b>Un nuevo modo de "Energía Adaptativa" que ajusta el rendimiento del procesador y el brillo de forma inteligente según tus hábitos diarios para estirar la batería al máximo.</li>
+            </center></ul>
+            <p><center>iOS 26 marca el final del camino para modelos icónicos. Ya no es compatible con el iPhone XR, XS y XS Max.</center></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- FLECHAS -->
+<div class="scroll-buttons">
+    <div class="scroll-btn up" onclick="scrollUp()">▲</div>
+    <div class="scroll-btn down" onclick="scrollDown()">▼</div>
+</div>
+
+<!-- BARRA AÑO -->
+<div class="year-indicator" id="yearIndicator">2009</div>
+
+<script>
+
+function toggle(element) {
+    const item = element.closest('.item');
+    const year = item.querySelector('.year').textContent;
+    const yearIndicator = document.getElementById("yearIndicator");
+
+    document.querySelectorAll('.item').forEach(i => {
+        if (i !== item) i.classList.remove('active');
+    });
+
+    item.classList.toggle('active');
+    yearIndicator.textContent = year;
+
+    yearIndicator.className = "year-indicator";
+    const colores = ["rojo","naranja","amarillo","verde","azul","morado","rosa","marron","negro","gris"];
+
+    colores.forEach(color => {
+        if(item.classList.contains(color)){
+            yearIndicator.classList.add(color);
+        }
+    });
+}
+
+function scrollUp() {
+    window.scrollBy({ top: -500, behavior: "smooth" });
+}
+
+function scrollDown() {
+    window.scrollBy({ top: 500, behavior: "smooth" });
+}
+
+function mostrarIOS() {
+    const android = document.getElementById("androidTimeline");
+    const ios = document.getElementById("iosTimeline");
+    const boton = document.querySelector(".switch-btn");
+    const titulo = document.getElementById("mainTitle");
+
+    if (ios.classList.contains("oculto")) {
+        ios.classList.remove("oculto");
+        android.classList.add("oculto");
+        titulo.textContent = "Línea del tiempo de iOS";
+        boton.textContent = "Línea del tiempo Android";
+    } else {
+        ios.classList.add("oculto");
+        android.classList.remove("oculto");
+        titulo.textContent = "Línea del tiempo de Android";
+        boton.textContent = "Línea del tiempo iOS";
+    }
+}
+
+</script>
+
+</body>
+</html>
